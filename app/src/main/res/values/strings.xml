@@ -3,4 +3,11 @@
     <string name="action_settings">Settings</string>
     <string name="et_brojtelefona">Broj telefona</string>
     <string name="pozivam_broj">Pozivam broj:</string>
+    <string name="tv_sms_poruka">SMS na:</string>
+    <string name="sendSms">Pošalji</string>
+    <string name="tvHelp">Pomoć</string>
+    <string name="tvHelpContent">Ovdje ide sadržaj koji će pomoći u korištenju ove aplikacije.</string>
+    <string name="bFinish">Gotovo</string>
+    <string name="goodbye">Doviđenja!</string>
+    <string name="sendingSMS">Šaljem SMS</string>
 </resources>
