@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     String[] lvItems = {"Poziv", "SMS", "Pomoć"};
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +29,19 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = (String) listView.getItemAtPosition(position);
 
-                Toast.makeText(MainActivity.this, item + " odabran", Toast.LENGTH_SHORT).show();
-
                 if (item.equals("Poziv")) {
-                    Intent intent = new Intent(MainActivity.this, CallActivity.class);
-                    startActivity(intent);
+                    intent = new Intent(MainActivity.this, CallActivity.class);
                 }
+
+                else if (item.equals("SMS")) {
+                    intent = new Intent(MainActivity.this, SmsActivity.class);
+                }
+
+                else if (item.equals("Pomoć")) {
+                    intent = new Intent(MainActivity.this, PomocActivity.class);
+                }
+
+                if (intent != null) startActivity(intent);
             }
         });
     }

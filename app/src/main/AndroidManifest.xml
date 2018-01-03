@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CallActivity"></activity>
+        <activity android:name=".CallActivity" />
+        <activity android:name=".SmsActivity" />
+        <activity android:name=".PomocActivity"></activity>
     </application>
 
 </manifest>
